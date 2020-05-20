@@ -2,7 +2,7 @@
 REM echo off stops the terminal from printing each command line
 
 REM This batch script copies data from the E-prime folder on computer to a USB-stick
-REM Created by Feng Gu in Dec. 2019. Modified by Feng Gu in May 2020. 
+REM Created by Feng Gu in Sept. 2019. Modified by Feng Gu in May 2020. 
 
 REM ask user to enter participant and take user's input as the value for variable ID
 set /P ID="What is the participant ID? (e.g.,CR000)" 
