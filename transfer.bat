@@ -26,10 +26,10 @@ REM create a folder per participant per session, in the format of ID_TP
 mkdir %ScriptDir%\CogRehab_data\%ID%_TP%SESSION%
 
 REM copy all runs of VM encoding, VM recognition, EFN-back, false belief for that participant at that TP from E-prime folders to ID_TP folder on USB stick
-for %%i in (Version_1, Version_2) do xcopy "C:\Users\crani\Desktop\CogRehab_Guimond\TP%SESSION%\1. VM_TP1\Encoding\%%i\*-%ID_num%-*.edat3" %ScriptDir%\CogRehab_data\%ID%_TP%SESSION%
-for %%i in (Version_1, Version_2) do xcopy "C:\Users\crani\Desktop\CogRehab_Guimond\TP%SESSION%\1. VM_TP1\Recognition\%%i\*-%ID_num%-*.edat3" %ScriptDir%\CogRehab_data\%ID%_TP%SESSION%
-xcopy "C:\Users\crani\Desktop\CogRehab_Guimond\TP%SESSION%\2. EFN_TP1\*-%ID_num%-*.edat3" %ScriptDir%\CogRehab_data\%ID%_TP%SESSION%
-xcopy "C:\Users\crani\Desktop\CogRehab_Guimond\TP%SESSION%\3. FB_TP1\*-%ID_num%-*.edat3" %ScriptDir%\CogRehab_data\%ID%_TP%SESSION%
+for %%i in (Version_1, Version_2) do xcopy "C:\Users\crani\Desktop\CogRehab_Guimond\TP%SESSION%\1. VM_TP%SESSION%\Encoding\%%i\*-%ID_num%-*.edat3" %ScriptDir%\CogRehab_data\%ID%_TP%SESSION%
+for %%i in (Version_1, Version_2) do xcopy "C:\Users\crani\Desktop\CogRehab_Guimond\TP%SESSION%\1. VM_TP%SESSION%\Recognition\%%i\*-%ID_num%-*.edat3" %ScriptDir%\CogRehab_data\%ID%_TP%SESSION%
+xcopy "C:\Users\crani\Desktop\CogRehab_Guimond\TP%SESSION%\2. EFN_TP%SESSION%\*-%ID_num%-*.edat3" %ScriptDir%\CogRehab_data\%ID%_TP%SESSION%
+xcopy "C:\Users\crani\Desktop\CogRehab_Guimond\TP%SESSION%\3. FB_TP%SESSION%\*-%ID_num%-*.edat3" %ScriptDir%\CogRehab_data\%ID%_TP%SESSION%
 
 REM show the following message to user
 echo ------------------------------------------------------------------------
